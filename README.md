@@ -1,4 +1,4 @@
-# makeitwhatyouwant
+# Make It What You Want
 
 A dynamic website generator that creates unique, interactive HTML pages on-demand using AI.  
 Every URL path generates a completely different experience — making each visit unique.

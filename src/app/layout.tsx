@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "makeitwhatyouwant",
+  title: "Make It What You Want",
   description: "A dynamic website generator that creates unique, interactive HTML pages on-demand using AI",
   icons: {
     icon: "/face.png",
