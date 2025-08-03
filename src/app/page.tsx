@@ -139,7 +139,7 @@ export default function Home() {
             className="mt-12"
           >
             <a
-              href="https://github.com/itsmarsss/thiswebsitedoesnotexist"
+              href="https://github.com/Doris-Lam/makeitwhatyouwant"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-lg rounded-full px-6 py-3 text-white border border-white/20 hover:border-white/40 transition-all duration-200"
