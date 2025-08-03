@@ -75,7 +75,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-6xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-             Make it What You Want
+             Make It What You Want
           </h1>
           
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
