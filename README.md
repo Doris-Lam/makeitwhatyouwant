@@ -1,114 +1,133 @@
-# Make it what you want
+# 🌐 Make it what you want
 
-A dynamic website generator that creates unique, interactive HTML pages on-demand using AI. Each URL path generates a completely different experience, making every visit unique.
+A dynamic website generator that creates unique, interactive HTML pages on-demand using AI.  
+Every URL path generates a completely different experience — making each visit unique.
 
-## Features
+---
 
-- **Dynamic Content Generation**: Every URL path generates a unique webpage using AI
-- **Client-Side Only**: All generated pages are pure HTML/CSS/JS with no backend dependencies
-- **Modern UI**:
-  - Sleek glass-effect toolbar
-  - Smooth animations and transitions
-  - Responsive design
+## 🚀 Features
+
+- **Dynamic Content Generation**  
+  Every URL path generates a unique webpage using AI
+
+- **Client-Side Only**  
+  Pure HTML/CSS/JS — no backend required
+
+- **Modern UI**  
+  - Sleek glass-effect toolbar  
+  - Smooth animations and transitions  
+  - Responsive design  
   - Dark mode by default
-- **Toolbar Features**:
-  - Hard Reload: Generate completely new content
-  - Soft Reload: Refresh current content without API call
-  - Random: Visit a randomly generated path
-  - Download HTML: Save the current page
-  - Share on Twitter: Share your discoveries
-  - History: Track your visited paths
-  - Social Links: Quick access to developer profiles
 
-## Tech Stack
+- **Toolbar Tools**  
+  - 🔁 Hard Reload – regenerate entirely new content  
+  - ♻️ Soft Reload – refresh without API call  
+  - 🎲 Random – visit a surprise path  
+  - 💾 Download HTML – save the current page  
+  - 🔗 Share on Twitter – spread your creations  
+  - 🕘 History – track your path visits  
+  - 👤 Social Links – connect with the dev
 
-- **Framework**: Next.js 15 with App Router
-- **Styling**: Tailwind CSS v4
-- **Animations**: Framer Motion
-- **AI**: Google Gemini 1.5 Flash
-- **Images**: Unsplash API integration
+---
 
-## Getting Started
+## 🛠 Tech Stack
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Doris-Lam/makeitwhatyouwant.git
-   cd makeitwhatyouwant
-   ```
+- **Framework**: Next.js 15 (App Router)  
+- **Styling**: Tailwind CSS v4  
+- **Animations**: Framer Motion  
+- **AI**: Google Gemini 1.5 Flash  
+- **Images**: Unsplash API integration  
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+---
 
-3. **Create a `.env.local` file** with your API keys:
-   ```
-   GEMINI_API_KEY=your_gemini_api_key_here
-   UNSPLASH_ACCESS_KEY=your_unsplash_access_key_here
-   ```
-   
-   Get your free API keys from:
-   - [Google AI Studio](https://aistudio.google.com/app/apikey) for Gemini
-   - [Unsplash Developers](https://unsplash.com/developers) for images
+## 📦 Getting Started
 
-4. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
+```bash
+git clone https://github.com/Doris-Lam/makeitwhatyouwant.git
+cd makeitwhatyouwant
+npm install
+```
 
-5. **Open [http://localhost:3000](http://localhost:3000)** in your browser
+Create a `.env.local` file in the root directory with your API keys:
 
-## How It Works
+```env
+GEMINI_API_KEY=your_gemini_api_key_here
+UNSPLASH_ACCESS_KEY=your_unsplash_access_key_here
+```
 
-1. When a user visits any path (e.g., `/cool/page`), the app captures the full path
-2. The system extracts keywords from the path to fetch relevant images from Unsplash
-3. The path and images are sent to Gemini AI with enhanced prompts for spectacular websites
-4. Gemini generates contextually relevant HTML with embedded images and creative styling
-5. The HTML is rendered directly in the browser with no backend processing
-6. A persistent toolbar provides navigation and utility functions
+🔑 **Get your free API keys from:**
+- [Google AI Studio](https://aistudio.google.com/app/apikey) (Gemini)
+- [Unsplash Developers](https://unsplash.com/developers)
 
-## Usage Examples
+Start the development server:
 
-Try visiting these paths to see AI-generated content:
-- `/space/adventure` - Cosmic exploration themes
-- `/underwater/city` - Aquatic urban landscapes  
-- `/mountain/peak` - Alpine adventure experiences
-- `/cyber/punk` - Futuristic dystopian aesthetics
-- `/medieval/castle` - Historical fantasy realms
-- `/rainbow/paradise` - Colorful joyful experiences
-- `/crystal/cave/magic` - Mystical underground worlds
+```bash
+npm run dev
+```
 
-Or create your own: `localhost:3000/your/custom/path`
+Visit: http://localhost:3000
 
-## Customization
+---
 
-### Prompt Modification
-The generation prompts can be found in `src/lib/prompts.ts`. Modify them to change the style or behavior of generated pages.
+## 🧠 How It Works
 
-### Toolbar Customization
-The toolbar component (`src/components/HoverToolbar.tsx`) can be modified to add or remove features.
+1. Any path like `/cool/page` triggers AI-powered content generation
+2. Keywords from the path fetch relevant images via Unsplash
+3. Combined data is sent to Gemini for creative HTML generation
+4. Generated HTML is rendered instantly in the browser
+5. Toolbar stays persistent for seamless interaction
 
-## Deployment
+---
 
-The project is ready for deployment on platforms like Vercel:
+## 🌈 Try These Paths
+
+```
+/space/adventure        → Cosmic exploration  
+/underwater/city        → Aquatic architecture  
+/cyber/punk             → Futuristic neon  
+/medieval/castle        → Historical fantasy  
+/crystal/cave/magic     → Mystical realms  
+/rainbow/paradise       → Colorful dreamland
+```
+
+Or invent your own: `localhost:3000/your/custom/path`
+
+---
+
+## 🎛️ Customization
+
+- **✏️ Prompts** → `src/lib/prompts.ts`
+- **🧰 Toolbar** → `src/components/HoverToolbar.tsx`
+
+---
+
+## ⚙️ Deployment
+
+Optimized for Vercel:
 
 ```bash
 npm run build
 ```
 
-Just ensure your environment variables are properly set in your deployment platform.
+Ensure your environment variables are set on your hosting platform.
 
-## Cost Estimation
+---
 
-Using Gemini 1.5 Flash + Unsplash API:
-- Gemini: ~50K characters per generation, very low cost
-- Unsplash: Free tier allows 50 requests/hour
-- Approximately $0.00625 per page generation
+## 💰 Cost Estimation
 
-## Contributing
+- **Gemini**: ~50K characters/page → ~$0.00625
+- **Unsplash**: Free tier = 50 requests/hour
 
-Feel free to open issues or submit pull requests. All contributions are welcome!
+Super cheap to run even at scale 🚀
 
-## License
+---
 
-MIT License - feel free to use this project however you'd like!
+## 🤝 Contributing
+
+Open an issue or submit a PR — contributions are always welcome!
+
+---
+
+## 📄 License
+
+MIT License — use freely and make it what you want!
