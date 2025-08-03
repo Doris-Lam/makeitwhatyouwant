@@ -9,7 +9,6 @@ interface ToolbarProps {
   onRandom: () => void;
   onDownload: () => void;
   onShare: () => void;
-  onHistory: () => void;
   currentPath: string;
 }
 
@@ -19,7 +18,6 @@ export default function HoverToolbar({
   onRandom,
   onDownload,
   onShare,
-  onHistory,
   currentPath
 }: ToolbarProps) {
   const [isVisible, setIsVisible] = useState(false);

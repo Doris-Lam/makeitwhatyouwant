@@ -17,7 +17,11 @@ export async function POST(request: NextRequest) {
     const imageQuery = pathKeywords.join(',');
 
     // Fetch images from Unsplash API
-    let images: any[] = [];
+    let images: Array<{
+      url: string;
+      alt: string;
+      photographer: string;
+    }> = [];
     try {
       const imageResponse = await fetch(
         `${request.nextUrl.origin}/api/unsplash?query=${encodeURIComponent(imageQuery)}&count=3`

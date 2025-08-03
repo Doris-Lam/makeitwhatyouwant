@@ -96,17 +96,6 @@ export default function DynamicPage() {
     window.open(shareUrl, '_blank');
   };
 
-  const handleHistory = () => {
-    const history = localStorage.getItem('visit-history');
-    if (history) {
-      const paths = JSON.parse(history);
-      const historyText = paths.join('\n');
-      alert(`Recent visits:\n${historyText}`);
-    } else {
-      alert('No history found');
-    }
-  };
-
   if (loading) {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center">
@@ -146,7 +135,6 @@ export default function DynamicPage() {
           onRandom={handleRandom}
           onDownload={handleDownload}
           onShare={handleShare}
-          onHistory={handleHistory}
           currentPath={fullPath}
         />
       </div>
@@ -168,7 +156,6 @@ export default function DynamicPage() {
         onRandom={handleRandom}
         onDownload={handleDownload}
         onShare={handleShare}
-        onHistory={handleHistory}
         currentPath={fullPath}
       />
     </div>

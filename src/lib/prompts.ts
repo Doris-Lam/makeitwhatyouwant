@@ -274,7 +274,11 @@ IMPORTANT: Output ONLY the complete HTML document starting with <!DOCTYPE html> 
 Current path: {path}
 `;
 
-export const generatePrompt = (path: string, images: any[] = []) => {
+export const generatePrompt = (path: string, images: Array<{
+  url: string;
+  alt: string;
+  photographer: string;
+}> = []) => {
   let imageInstructions = '';
   
   if (images && images.length > 0) {
@@ -286,7 +290,7 @@ HERO IMAGE (use the first image):
 <!-- Photo by ${images[0]?.photographer} on Unsplash -->
 
 SECTION IMAGES (use these throughout content):
-${images.slice(1).map((img: any, index: number) => `
+${images.slice(1).map((img) => `
 <img src="${img.url}" alt="${img.alt}" class="w-full h-48 object-cover rounded-lg shadow-md my-6">
 <!-- Photo by ${img.photographer} on Unsplash -->`).join('')}
 

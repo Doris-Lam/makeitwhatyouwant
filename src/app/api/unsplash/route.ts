@@ -31,7 +31,15 @@ export async function GET(request: NextRequest) {
     const data = await response.json();
     
     // Extract relevant image data
-    const images = data.results.map((photo: any) => ({
+    const images = data.results.map((photo: {
+      id: string;
+      urls: { regular: string; thumb: string };
+      alt_description?: string;
+      description?: string;
+      width: number;
+      height: number;
+      user: { name: string; links: { html: string } };
+    }) => ({
       id: photo.id,
       url: photo.urls.regular,
       thumb: photo.urls.thumb,
