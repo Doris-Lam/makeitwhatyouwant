@@ -1,4 +1,4 @@
-# 🌐 Make it what you want
+# Make it what you want
 
 A dynamic website generator that creates unique, interactive HTML pages on-demand using AI.  
 Every URL path generates a completely different experience — making each visit unique.
@@ -20,13 +20,13 @@ Every URL path generates a completely different experience — making each visit
   - Dark mode by default
 
 - **Toolbar Tools**  
-  - 🔁 Hard Reload – regenerate entirely new content  
-  - ♻️ Soft Reload – refresh without API call  
-  - 🎲 Random – visit a surprise path  
-  - 💾 Download HTML – save the current page  
-  - 🔗 Share on Twitter – spread your creations  
-  - 🕘 History – track your path visits  
-  - 👤 Social Links – connect with the dev
+  - Hard Reload – regenerate entirely new content  
+  - Soft Reload – refresh without API call  
+  - Random – visit a surprise path  
+  - Download HTML – save the current page  
+  - Share on Twitter – spread your creations  
+  - History – track your path visits  
+  - Social Links – connect with the dev
 
 ---
 
@@ -64,9 +64,6 @@ Start the development server:
 ```bash
 npm run dev
 ```
-
-Visit: http://localhost:3000
-
 ---
 
 ## 🧠 How It Works
@@ -79,7 +76,7 @@ Visit: http://localhost:3000
 
 ---
 
-## 🌈 Try These Paths
+## 👀 Try These Paths
 
 ```
 /space/adventure        → Cosmic exploration  
@@ -90,7 +87,7 @@ Visit: http://localhost:3000
 /rainbow/paradise       → Colorful dreamland
 ```
 
-Or invent your own: `localhost:3000/your/custom/path`
+Or invent your own!
 
 ---
 
